@@ -19,7 +19,7 @@ public class DemoAction {
 
   	@GPAutowired private IDemoService demoService;
 
-	@GPRequestMapping("/query")
+	@GPRequestMapping("/query") //asdsd
 	public void query(HttpServletRequest req, HttpServletResponse resp,
 					  @GPRequestParam("name") String name){
 		String result = demoService.get(name);
